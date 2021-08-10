@@ -16,6 +16,9 @@ public class HibernateSpeakerRepositoryImpl implements SpeakerRepository {
         speaker.setFirstName("Marcio");
         speaker.setLastName("Rodrigues");
 
+//        speaker.setFirstName("Miriam");
+//        speaker.setLastName("Makeba");
+
         speakers.add(speaker);
 
         return speakers;

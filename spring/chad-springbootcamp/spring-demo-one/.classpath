@@ -6,6 +6,29 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="lib/spring-aop-5.3.9.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aop-5.3.9-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aop-5.3.9-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aspects-5.3.9.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aspects-5.3.9-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aspects-5.3.9-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring-beans-5.3.9.jar"/>
+	<classpathentry kind="lib" path="lib/spring-beans-5.3.9-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/spring-beans-5.3.9-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-5.3.9.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-5.3.9-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-5.3.9-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-indexer-5.3.9.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-indexer-5.3.9-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-indexer-5.3.9-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-support-5.3.9.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-support-5.3.9-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-support-5.3.9-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring-core-5.3.9.jar"/>
+	<classpathentry kind="lib" path="lib/spring-core-5.3.9-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/spring-core-5.3.9-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring-expression-5.3.9.jar"/>
+	<classpathentry kind="lib" path="lib/spring-expression-5.3.9-javadoc.jar"/>
 	<classpathentry kind="lib" path="lib/spring-expression-5.3.9-sources.jar"/>
 	<classpathentry kind="lib" path="lib/spring-instrument-5.3.9.jar"/>
 	<classpathentry kind="lib" path="lib/spring-instrument-5.3.9-javadoc.jar"/>

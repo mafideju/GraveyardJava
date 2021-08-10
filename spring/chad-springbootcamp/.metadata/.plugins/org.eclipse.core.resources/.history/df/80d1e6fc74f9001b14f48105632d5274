@@ -1,0 +1,9 @@
+package com.mafideju.springdemo;
+
+public class BaseballCoach {
+	
+	public String getDailyWorkout() {
+		return "Praticar 30 minutos de rebatidas";
+	}
+
+}

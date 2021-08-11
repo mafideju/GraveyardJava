@@ -1,0 +1,9 @@
+package com.mafideju.springdemo;
+
+public class BoxingCoach implements Coach{
+
+	@Override
+	public String getDailyWorkout() {
+		return "Treinar soco na parede";
+	}
+}

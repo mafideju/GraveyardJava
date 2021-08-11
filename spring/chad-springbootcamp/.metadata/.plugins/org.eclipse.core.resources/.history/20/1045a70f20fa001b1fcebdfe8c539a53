@@ -1,0 +1,27 @@
+package com.mafideju.springdemo;
+
+public class GymCoach implements Coach {
+	public FortuneService fortuneService;
+	
+	public GymCoach() {
+		System.out.println("Gym: No args constructor");
+	}
+	
+	
+	
+	@Override
+	public String getDailyWorkout() {
+		return "100Kg de Supino";
+	}
+
+	@Override
+	public String getDailyAdvice() {
+		return "Aqueça para não contundir";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		return ;
+	}
+
+}

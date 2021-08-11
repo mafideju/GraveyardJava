@@ -1,0 +1,33 @@
+package com.mafideju.springdemo;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class HappyFortuneService implements FortuneService {
+
+	@Override
+	public String getFortune() {
+//		
+//		String fortuna[] = { "Hoje é seu dia de sorte!!! =)", "Vai que vai da pé!", "Have a lucky day." };
+//		
+//		int random = (int) Math.random();
+//		
+//		return fortuna[random];	
+		
+		List<String> objetos = new ArrayList<String>();
+		objetos.add("bola");
+		objetos.add("osso");
+		objetos.add("graveto");
+		objetos.add("disco");
+		System.out.println("Tamanho inicial lista: " + objetos.size());
+
+		Random random = new Random();
+		String sorteada = objetos.get(random.nextInt(objetos.size()));
+		
+		System.out.println(sorteada);
+		
+		return sorteada;
+	}
+
+}

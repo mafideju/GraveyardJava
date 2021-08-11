@@ -1,0 +1,23 @@
+package com.mafideju.springdemo;
+
+public class GymCoach implements Coach {
+
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getDailyAdvice() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

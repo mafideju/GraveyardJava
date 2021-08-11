@@ -1,0 +1,14 @@
+package com.mafideju.springdemo;
+
+
+public class HappyFortuneService implements FortuneService {
+
+	@Override
+	public String getFortune() {
+		
+		String fortuna[] = { "Hoje é seu dia de sorte!!! =)", "Vai que vai da pé!", "Have a lucky day." };
+		
+		return fortuna[0];	
+	}
+
+}

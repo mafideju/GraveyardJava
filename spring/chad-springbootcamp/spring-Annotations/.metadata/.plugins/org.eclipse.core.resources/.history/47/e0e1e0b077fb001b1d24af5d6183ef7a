@@ -1,0 +1,10 @@
+package com.mafideju.springdemo;
+
+public class FortuneServiceImpl implements FortuneService {
+
+	@Override
+	public String getFortune() {
+		return "Vai dar sorte hoje.";
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.mafideju.springdemo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class AthleticsCoach implements Coach {
+	
+	private FortuneService fortuneService;
+	
+	public AthleticsCoach(FortuneService fortuneService) {
+		
+	}
+
+	@Override
+	public String getDailyWorkout() {
+
+		return "Sem desculpas. Vai andar uma hora hoje.";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		
+		return fortuneService.getFortune();
+	}
+
+}

@@ -1,11 +1,9 @@
 package com.mafideju.firstSpringApp.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
-@Entity(name="sessions")
+@Entity(name="session")
 public class Session {
 
     @Id
@@ -14,6 +12,22 @@ public class Session {
     private String session_name;
     private String session_description;
     private Integer session_length;
+
+    @ManyToMany
+    @JoinTable(
+            name = "session_speakers",
+            joinColumns = @JoinColumn(name = "session_id"),
+            inverseJoinColumns = @JoinColumn(name = "speaker_id")
+    )
+    private List<Session> sessions;
+
+    public List<Session> getSessions() {
+        return sessions;
+    }
+
+    public void setSpeakers(List<Session> sessions) {
+        this.sessions = sessions;
+    }
 
     public Session() {}
 

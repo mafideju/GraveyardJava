@@ -1,12 +1,12 @@
 package com.mafideju.firstSpringApp.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.hibernate.annotations.Type;
 
-@Entity(name = "speakers")
-public class Speakers {
+import javax.persistence.*;
+import java.util.List;
+
+@Entity(name = "speaker")
+public class Speaker {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,7 +17,30 @@ public class Speakers {
     private String company;
     private String speaker_bio;
 
-    public Speakers() {}
+    @Lob
+    @Type(type = "org.hibernate.type.BinaryType")
+    private byte[] speaker_photo;
+
+    @ManyToMany(mappedBy = "speakers")
+    private List<Speaker> speakers;
+
+    public byte[] getSpeaker_photo() {
+        return speaker_photo;
+    }
+
+    public void setSpeaker_photo(byte[] speaker_photo) {
+        this.speaker_photo = speaker_photo;
+    }
+
+    public List<Speaker> getSpeakers() {
+        return speakers;
+    }
+
+    public void setSpeaker(List<Speaker> speaker) {
+        this.speakers = speakers;
+    }
+
+    public Speaker() {}
 
     public Long getSpeaker_id() {
         return speaker_id;

@@ -1,0 +1,18 @@
+package org.mafideju.files;
+
+import java.io.BufferedWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class WritingFiles {
+
+	public static void main(String[] args) throws IOException {
+
+		Path path = Path.of("files/poems.txt");
+		
+		BufferedWriter writer = Files.newBufferedWriter(path);
+		
+		writer.write("Hoje eh segunda feira e decretamos feriado");
+	}
+
+}

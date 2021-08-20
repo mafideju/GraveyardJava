@@ -1,9 +1,3 @@
-INDEX VERSION 1.4+C:\Users\m.rodrigues.da.silva\StudyProjects\spring\chad-springbootcamp\SpringMVC\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1269459548.index
-2906309556.index
-3956340013.index
-3840704163.index
-237508677.index
-237508677.index
-4293547513.index
-3617312122.index
+INDEX VERSION 1.4+/home/marciomafidejurodrigues/Projects/Java/graveyard-java/chad-springbootcamp/SpringMVC/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+557173393.index
+3305155613.index

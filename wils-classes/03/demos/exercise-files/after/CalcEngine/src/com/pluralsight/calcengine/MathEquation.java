@@ -3,17 +3,18 @@ package com.pluralsight.calcengine;
 public class MathEquation {
     private double leftVal;
     private double rightVal;
-    private char opCode;
+    private String opCode;
     private double result;
 
-    public MathEquation() {}
+    //public MathEquation() {}
 
-    public MathEquation(char opCode) {
+    //public MathEquation(char opCode) {
+      //  this.opCode = opCode;
+    //}
+
+    public MathEquation(String opCode, double leftVal, double rightVal) {
+        //this(opCode);
         this.opCode = opCode;
-    }
-
-    public MathEquation(char opCode, double leftVal, double rightVal) {
-        this(opCode);
         this.leftVal = leftVal;
         this.rightVal = rightVal;
     }
@@ -21,16 +22,16 @@ public class MathEquation {
 
     void execute() {
         switch (opCode) {
-            case 'a':
+            case "a":
                 result = leftVal + rightVal;
                 break;
-            case 's':
+            case "s":
                 result = leftVal - rightVal;
                 break;
-            case 'm':
+            case "m":
                 result = leftVal * rightVal;
                 break;
-            case 'd':
+            case "d":
                 result = rightVal != 0 ? leftVal / rightVal : 0.0d;
                 break;
             default:
@@ -57,11 +58,11 @@ public class MathEquation {
         this.rightVal = rightVal;
     }
 
-    public char getOpCode() {
+    public String getOpCode() {
         return opCode;
     }
 
-    public void setOpCode(char opCode) {
+    public void setOpCode(String opCode) {
         this.opCode = opCode;
     }
 

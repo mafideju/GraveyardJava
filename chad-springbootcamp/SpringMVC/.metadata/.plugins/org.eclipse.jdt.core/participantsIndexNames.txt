@@ -1,3 +1,0 @@
-INDEX VERSION 1.131
-C:\Users\m.rodrigues.da.silva\StudyProjects\spring\chad-springbootcamp\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\237508677.index
-\spring-mvc-demo\src

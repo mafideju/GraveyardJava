@@ -13,15 +13,19 @@ public class MathEquation {
     public void execute() {
         switch (opCode) {
             case 'a':
+                System.out.println("Parts: " + leftVal + " + " + rightVal);
                 result = leftVal + rightVal;
                 break;
             case 's':
+                System.out.println("Parts: " + leftVal + " - " + rightVal);
                 result = leftVal - rightVal;
                 break;
             case 'm':
+                System.out.println("Parts: " + leftVal + " X " + rightVal);
                 result = leftVal * rightVal;
                 break;
             case 'd':
+                System.out.println("Parts: " + leftVal + " / " + rightVal);
                 result = rightVal != 0 ? leftVal / rightVal : 0.0d;
                 break;
             default:

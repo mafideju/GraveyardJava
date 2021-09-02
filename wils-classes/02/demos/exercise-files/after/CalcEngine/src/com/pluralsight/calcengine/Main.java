@@ -3,18 +3,6 @@ package com.pluralsight.calcengine;
 import java.time.LocalDate;
 import java.util.Scanner;
 
-/*
-************************************************************************
-* Note: If you have difficulty building the code, it's probably due to
-*       a difference in the version of the JDK used to create this
-*       project and the JDK version you have installed.
-*
-*       To fix the JDK simply click "OK" on the dialog that appears
-*       indicating that the build failed. This will open a project
-*       configuration dialog. On the project configuration dialog,
-*       select the appropriate JDK version for your setup
- ************************************************************************
- */
 public class Main {
 
     public static void main(String[] args) {
@@ -30,7 +18,7 @@ public class Main {
 
         for(MathEquation equation : equations) {
             equation.execute();
-            System.out.println("result = " + equation.getResult());
+            System.out.println("Result = " + equation.getResult());
         }
 
     }

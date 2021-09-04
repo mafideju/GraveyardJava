@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+	font-family: monospace;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+.backdrop {
+	background-color: olive;
+	padding: 16px;
+}
+
+.container {
+	background-color: whitesmoke;
+	margin: 16px;
+	padding: 16px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+.button__row {
+	display: flex;
+}
+
+.button {
+	border: 1px solid black;
+	border-radius: 8px;
+	width: 225px;
+	height: 50px;
+}
+
+.button__container {
+	padding: 10px 30px;
+}
+
+.form {
+	margin-top: 32px;
+}

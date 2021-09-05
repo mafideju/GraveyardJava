@@ -20,10 +20,21 @@
 				<form:form action="studentView" modelAttribute="student">
 					<label for="firsName">Nome: 
 						<form:input path="firstName" />
+						<form:errors path="firstName" class="error" />
 					</label>
 					
 					<label for="lastName">Sobrenome: 
 						<form:input path="lastName" />
+					</label>
+					
+					<label for="age">Idade: 
+						<form:input path="age" type="number" />
+						<form:errors path="age" class="error" />
+					</label>
+					
+					<label for="postalCode">CEP: 
+						<form:input path="postalCode" />
+						<form:errors path="postalCode" class="error" />
 					</label>
 					
 					<label for="country">País: 
@@ -32,7 +43,7 @@
 						</form:select>
 					</label>
 					
-					<div>
+					<div class="mt16">
 						<label for="java">
 							<form:radiobutton path="favoriteLanguage" value="Java" id="java" />Java
 						</label>
@@ -47,7 +58,7 @@
 						</label>
 					</div>
 					
-					<div>
+					<div class="mt16">
 						<label for="fedora">
 							<form:checkbox path="os" value="Fedora" id="fedora" />Fedora
 						</label>
@@ -62,8 +73,10 @@
 						</label>
 					</div>
 					
+					<div class="mt16">
+						<input type="submit" value="Send Data"/>
+					</div>
 					
-					<input type="submit" value="Send Data"/>
 					
 				</form:form>
 			</div>

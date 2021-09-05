@@ -30,14 +30,27 @@ a {
 .button {
 	border: 1px solid black;
 	border-radius: 8px;
+	padding: 8px;
 	width: 225px;
 	height: 50px;
 }
 
 .button__container {
-	padding: 10px 30px;
+	padding: 16px 32px;
 }
 
 .form {
 	margin-top: 32px;
+}
+
+.error {
+	border: 1px solid red;
+	outline: 1px solid orange;
+	color: red;
+	display: block;
+	width: 250px;
+}
+
+.mt16 {
+	margin-top: 16px;
 }

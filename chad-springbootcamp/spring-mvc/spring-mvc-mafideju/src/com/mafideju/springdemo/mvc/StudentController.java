@@ -1,7 +1,13 @@
 package com.mafideju.springdemo.mvc;
 
+import javax.validation.Valid;
+
+import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -22,12 +28,24 @@ public class StudentController {
 	}
 	
 	@RequestMapping("/studentView")
-	public String studentView(@ModelAttribute("student") Student student) {
-				
-		// String completeStudentName = 
-		System.out.println(student.getFirstName() + " " + student.getLastName());
+	public String studentView(@Valid @ModelAttribute("student") Student student, BindingResult bindingResult) {
+			System.out.println(bindingResult);
+		if (bindingResult.hasErrors()) {
+			return "student-form";
+		} else {
+			return "student-view"; 
+		}
 		
-		return "student-view";
 	}
+	
+	@InitBinder
+	public void initBinder(WebDataBinder dataBinder) {
+		
+		StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
+		
+		dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
+		
+	}
+	
 
 }

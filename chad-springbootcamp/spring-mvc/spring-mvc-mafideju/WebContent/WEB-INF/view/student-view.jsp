@@ -21,11 +21,11 @@
 			<div class="results">
 				<div style="display: flex; align-items: center;">
 					<p>Estudante: </p>
-					<h2>${student.firstName} ${student.lastName}</h2>
+					<h2>${student.firstName} ${student.lastName}, ${student.age} anos</h2>
 				</div>
 				<div style="display: flex; align-items: center;">
 					<p>País: </p>
-					<h2>${student.country}</h2>
+					<h2>${student.country} - ${student.postalCode}</h2>
 				</div>
 				<div style="display: flex; align-items: center;">
 					<p>Programa em: </p>

@@ -8,6 +8,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.mafideju.springdemo.mvc.validators.CourseCode;
+
 public class Student {
 	@NotNull(message="Not Null, Baby.")
 	@Size(min=1, message="Pelo menos uma letra")
@@ -23,6 +25,16 @@ public class Student {
 	private Integer age;
 	@Pattern(regexp="^[0-9]{8}", message="Apenas os numeros")
 	private String postalCode;
+	@CourseCode
+	private String courseCode;
+
+	public String getCourseCode() {
+		return courseCode;
+	}
+
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
+	}
 
 	public Student () {
 		loadCountries();

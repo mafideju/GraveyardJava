@@ -32,10 +32,16 @@
 						<form:errors path="age" class="error" />
 					</label>
 					
-					<label for="postalCode">CEP: 
-						<form:input path="postalCode" />
-						<form:errors path="postalCode" class="error" />
-					</label>
+					<div>
+						<label for="postalCode">CEP: 
+							<form:input path="postalCode" />
+							<form:errors path="postalCode" class="error" />
+						</label>
+						<label for="courseCode">Curso: 
+							<form:input path="courseCode" />
+							<form:errors path="courseCode" class="error" />
+						</label>
+					</div>
 					
 					<label for="country">País: 
 						<form:select path="country">

@@ -31,6 +31,10 @@
 					<p>Programa em: </p>
 					<h2>${student.favoriteLanguage}</h2>
 				</div>
+				<div style="display: flex; align-items: center;">
+					<p>Curso escolhido: </p>
+					<h2>${student.courseCode}</h2>
+				</div>
 				
 				<div style="display: flex; align-items: center;">
 					<p>Sistema Operacional: </p>

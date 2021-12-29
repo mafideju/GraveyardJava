@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+C:\Users\m.rodrigues.da.silva\StudyProjects\spring\paum-nio\.metadata\.plugins\org.eclipse.jdt.core
-2879562132.index
-1573455596.index

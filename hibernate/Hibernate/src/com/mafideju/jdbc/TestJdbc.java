@@ -16,7 +16,7 @@ public class TestJdbc {
 			System.out.println("Conectando na base de dados" + jdbcUrl);
 			Connection connection = DriverManager.getConnection(jdbcUrl, user, password);
  			
-			System.out.println("connection successfull --- =)");
+			System.out.println("connection successfull --- =)" + connection);
 			
 		} catch (Exception e) {
 			e.printStackTrace();

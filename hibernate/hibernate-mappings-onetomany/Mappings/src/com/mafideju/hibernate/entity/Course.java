@@ -29,7 +29,8 @@ public class Course {
 	public Course() {}
 	
 	public Course(String title) {
-		this.title = title;}
+		this.title = title;
+	}
 
 	public int getId() {
 		return id;

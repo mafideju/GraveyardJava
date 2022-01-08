@@ -26,13 +26,13 @@ public class UpdateRunner {
 		try {
 			session.beginTransaction();
 
-			int id = 3;
+			int id = 5;
 			Instructor instructor = session.get(Instructor.class, id);
 			System.out.println(instructor);
 			
-			Course course = new Course("Angular Crash Courses");
-			Course course1 = new Course("Kotlin Crash Courses");
-			Course course2 = new Course("Android Native Crash Courses");
+			Course course = new Course("Java Programming");
+			Course course1 = new Course("JavaScript Programming");
+			Course course2 = new Course("SQL Programming");
 			
 			instructor.add(course);
 			instructor.add(course1);

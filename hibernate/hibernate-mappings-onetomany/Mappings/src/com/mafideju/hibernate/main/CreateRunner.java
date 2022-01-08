@@ -24,12 +24,8 @@ public class CreateRunner {
 		Session session = factory.getCurrentSession();
 		
 		try {
-//			int id = 1;
-//			Instructor instructor = session.get(Instructor.class, id);
-//			System.out.println("" + instructor.get?????);
-			
-			Instructor geraldo = new Instructor("Brad", "Travbersy", "brad@luv2code.com");
-			InstructorDetail geraldoDetalhe = new InstructorDetail("www.youtube.com/traversymedia", "Instrutor");
+			Instructor geraldo = new Instructor("Marcio", "Mafideju", "boss@mafideju.com");
+			InstructorDetail geraldoDetalhe = new InstructorDetail("www.youtube.com/mafideju", "Developer");
 			geraldo.setInstructorDetail(geraldoDetalhe);
 			
 			session.beginTransaction();

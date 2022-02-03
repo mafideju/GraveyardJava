@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>&nbsp;Maven</title>
+	<title>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maven</title>
 </head>
 <body style="font-family: cursive;">
 	<main>
@@ -11,7 +11,9 @@
 		</article>
 	</main>
 	<footer>
-		<small>Hello World! From Maven Marciland</small>
+		<small>
+			<code>Hello World! From Maven Marciland</code>
+		</small>
 	</footer>
 </body>
 </html>

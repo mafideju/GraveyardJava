@@ -8,6 +8,7 @@ import org.hibernate.cfg.Configuration;
 import com.mafideju.hibernate.entity.Course;
 import com.mafideju.hibernate.entity.Instructor;
 import com.mafideju.hibernate.entity.InstructorDetail;
+import com.mafideju.hibernate.entity.Review;
 
 public class GetInstructorCoursesRunner {
 	
@@ -18,6 +19,7 @@ public class GetInstructorCoursesRunner {
 				.addAnnotatedClass(Instructor.class)
 				.addAnnotatedClass(InstructorDetail.class)
 				.addAnnotatedClass(Course.class)
+				.addAnnotatedClass(Review.class)
 				.buildSessionFactory();
 
 		Session session = factory.getCurrentSession();
@@ -25,13 +27,20 @@ public class GetInstructorCoursesRunner {
 		try {
 			session.beginTransaction();
 
-			int id = 4;
-			Instructor instructor = session.get(Instructor.class, id);
-			System.out.println(instructor);
+			int id = 34;
+			Course course = session.get(Course.class, id);
 			
-			instructor.getCourses();
+			System.out.println(course);
+			System.out.println(course.getReviews());
 			
-			System.out.println("Cursos do " + instructor.getFirstName() + ": " + instructor.getCourses());
+			/**
+			 * @author marciomafidejurodrigues 
+			 * DELETAR UM CURSO
+			 * 
+			 * session.delete(course);
+			 */
+			
+			// session.delete(course);
 			
 			session.getTransaction().commit();
 			

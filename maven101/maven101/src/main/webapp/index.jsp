@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maven</title>
+	<title>&nbsp;°&nbsp;°&nbsp;°&nbsp;°&nbsp;°&nbsp;°&nbsp;°&nbsp;°&nbsp;°&nbsp;°&nbsp;Maven</title>
 </head>
 <body style="font-family: cursive;">
 	<main>
